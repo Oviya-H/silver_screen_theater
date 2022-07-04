@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Silver_screen_theaters</string>
+    <string name="movie_route">https://dry-meadow-32049.herokuapp.com/api/movies</string>
+    <string name="login_route">https://dry-meadow-32049.herokuapp.com/api/login/theatres</string>
+    <string name="theater">https://dry-meadow-32049.herokuapp.com/api/theatres</string>
+    <string name="seattype">https://dry-meadow-32049.herokuapp.com/api/seattypes</string>
+    <string name="seatavailable">https://dry-meadow-32049.herokuapp.com/api/seatsavailable</string>
+    <string name="shows">https://dry-meadow-32049.herokuapp.com/api/shows</string>
+
+
+</resources>

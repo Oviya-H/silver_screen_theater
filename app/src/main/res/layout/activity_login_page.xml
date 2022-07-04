@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_page">
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/regsiter_google"
+        android:layout_above="@id/login_mail"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/google"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/regsiter_facebook"
+        android:layout_above="@id/login_mail"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/regsiter_google"
+        android:background="@drawable/facebook"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/login_mail"
+        android:layout_margin="20dp"
+        android:layout_above="@id/register_mail"
+        android:background="@drawable/editview_design"
+        android:padding="10dp"
+        android:hint="Phone/Email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/register_mail"
+        android:hint="Password"
+        android:background="@drawable/editview_design"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_forgetPassword"
+        android:layout_below="@id/register_mail"
+        android:layout_marginLeft="20dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/black"
+        android:background="@color/transparent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_bt"
+        android:layout_below="@id/login_forgetPassword"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_design"
+        android:layout_centerHorizontal="true"
+        android:text="Login"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_newAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_bt"
+        android:text="Don't have account? Sign up"
+        android:textColor="@color/black"
+        android:background="@color/transparent"/>
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/editview_design"
+            android:hint="Theater Name"
+            android:padding="10dp"
+            android:id="@+id/register_theater_name" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/register_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/editview_design"
+            android:padding="10dp"
+            android:layout_below="@id/register_theater_name"
+            android:hint="Name"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/register_phone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/editview_design"
+            android:padding="10dp"
+            android:inputType="number"
+            android:layout_below="@id/register_name"
+            android:hint="Phone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_phone_error"
+            android:layout_below="@id/register_phone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_phoneVerify"
+            android:layout_toRightOf="@id/register_phone"
+            android:layout_below="@id/register_name"
+            android:text="Verify"
+            android:textColor="@color/black"
+            android:background="@color/transparent"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/register_mail"
+            android:hint="Email"
+            android:background="@drawable/editview_design"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/reg_phone_error"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_mail_error"
+            android:layout_below="@id/register_mail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            />
+
+
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/register_city"
+            android:layout_margin="20dp"
+            android:background="@drawable/editview_design"
+            android:layout_below="@id/reg_mail_error"
+            android:hint="City"/>
+
+        <EditText
+            android:id="@+id/register_address_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/register_city"
+            android:layout_margin="20dp"
+            android:background="@drawable/editview_design"
+            android:hint="Address Line 1"
+
+            />
+        <EditText
+            android:id="@+id/register_address_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/register_address_1"
+            android:layout_margin="20dp"
+            android:background="@drawable/editview_design"
+            android:hint="Address Line 2"
+
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_password"
+            android:layout_below="@id/register_address_2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/editview_design"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:hint="Create Password"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/re_register_password"
+            android:layout_below="@id/register_password"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/editview_design"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:hint="Retype Password"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_pass_error"
+            android:layout_below="@id/re_register_password"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_bt"
+            android:layout_below="@id/reg_pass_error"
+            android:layout_margin="20dp"
+            android:text="Register"
+            android:padding="10dp"
+            android:background="@drawable/button_design"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
